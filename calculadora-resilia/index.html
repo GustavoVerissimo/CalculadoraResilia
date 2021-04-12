@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./themes/resilia_base.css">
+</head>
+<body>
+    <div id="megaDiv" class="flexContainer">
+        <div id="calculadoraDiv">
+            <div id="display">
+                <p class="data"></p>
+                <P class="displayTela">0</P>
+                <P class="displayTelaResultado">0</P>
+            </div>
+            //grid da calculadora//
+            <div id="calculadora" class="gridContainer">
+                <button class="btn num click" id="C">C</button>
+                <button class="btn num click" id="Inverter Sinal">±</button>
+                <button class="btn num click" id="Porcento">%</button>
+                <button class="btn num click" id="Dividir">÷</button>
+                <button class="num click" id="7">7</button>
+                <button class="num click" id="8">8</button>
+                <button class="num click" id="9">9</button>
+                <button class="btn num click" id="Multiplica">x</button>
+                <button class="num click" id="4">4</button>
+                <button class="num click" id="5">5</button>
+                <button class="num click" id="6">6</button>
+                <button class="btn num click" id="Menos">-</button>
+                <button class="num click" id="1">1</button>
+                <button class="num click" id="2">2</button>
+                <button class="num click" id="3">3</button>
+                <button class=" btn num click" id="Mais">+</button>
+                <button class="numZero click" id="0">0</button>
+                <button class="num click" id="Virgula">,</button>
+                <button class="btn Igual click" id="Igual">=</button>
+            </div>
+        </div>
+        <button id="historico">histórico</button>
+    </div>
+    <div id="memoria" class="invisible">
+        <p id="histricogeral">0</p>
+        <button id="fecharHistorico"> X </button>
+    </div>
+    <script src="./js/main.js"></script>
+    <script src="./js/animation.js"></script>
+</body>
+</html>

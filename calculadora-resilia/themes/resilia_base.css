@@ -1,0 +1,163 @@
+*{
+    box-sizing: border-box;
+    margin: 0 0;
+    border: 0 0;
+    padding: 0 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+
+button{
+    border-style: solid;
+    font-size: 25px;
+}
+
+#megaDiv{
+    background-color:rgb(5,5,5);
+    height: 100vh;
+    width: 100vw;
+}
+
+.flexContainer{
+    display: flex;
+}
+
+.gridContainer{
+    display: grid;
+    width: 100%;
+    height: 80%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+
+#calculadoraDiv{
+    margin: auto;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: rgb(5,5,5);
+    width: 50%;
+    height: 100%;
+}
+
+#memoria{
+    overflow-y: scroll;
+    background-color: rgba(255, 255, 255, 0.692);
+    width: 40%;
+    height: 95%;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 10px;
+    right: 380px;
+    padding: 60px;
+    font-size: 25px;
+}
+
+#display{
+    width: 100%;
+    height: 15%;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 5%;
+}
+
+[id="0"]{
+    grid-column: 1 / 3;
+}
+
+.num{
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    border-color: grey;
+    border-width: 0px;
+    background-color: #e8c100;
+}
+
+.Igual{
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    border-color: grey;
+    border-width: 0px;
+    background-color: #e8c100;
+}
+
+.btn{
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    border-color: grey;
+    border-width: 0px;
+    background-color: #343434;
+    color: white;
+}
+
+.numZero{
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    border-width: 0px;
+    background-color: #e8c100;
+}
+
+/* display*/
+
+.resultado{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 2px;
+    background-color: lightgrey;
+    color: black;
+}
+
+.displayTela{
+    font-size: 15px;
+    text-align: right;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10px 10px 0  0;
+}
+
+.displayTelaResultado{
+    font-size: 30px;
+    text-align: right;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10px;
+}
+
+
+/* Comportamento e estilo do histórico de operacoes */
+#historico{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    padding: 5px;
+    border: none;
+    background-color: #e8c100;
+    color: #343434 ;
+}
+
+#fecharHistorico{
+    padding: 10px;
+    width: 50px;
+    border-radius: 100px;
+    background-color: #e8c100;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.invisible{
+    display: none;
+}
+
+.visible{
+    display: inline;
+}
+    
